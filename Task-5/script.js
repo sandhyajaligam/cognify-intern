@@ -1,5 +1,6 @@
  let users = [];
 let currentIndex = 0;
+
 const userCard = document.getElementById('user-card');
 const nextBtn = document.getElementById('next-btn');
 
@@ -14,14 +15,17 @@ function displayUser(index) {
 }
 
 fetch('https://randomuser.me/api/?results=10')
-  .then(res => res.json())
+  .then(response => {
+    if (!response.ok) throw new Error('Network response was not ok');
+    return response.json();
+  })
   .then(data => {
     users = data.results;
     displayUser(currentIndex);
   })
-  .catch(err => {
+  .catch(error => {
+    console.error("Fetch error:", error);
     userCard.innerHTML = `<p class="error">Failed to load user data</p>`;
-    console.error(err);
   });
 
 nextBtn.addEventListener('click', () => {
