@@ -1,0 +1,25 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+.navbar {
+  background-color: orange;
+  padding: 10px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

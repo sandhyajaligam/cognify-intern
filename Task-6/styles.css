@@ -1,0 +1,90 @@
+ /* ---------- BODY ---------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000; /* deep black */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+/* ---------- HEADING ---------- */
+.main-heading {
+  font-size: 2.4rem;
+  color: #ffd700; /* gold */
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ---------- FORM BOX ---------- */
+form {
+  background: linear-gradient(135deg, rgba(103, 58, 183, 0.25), rgba(63, 81, 181, 0.25)); /* violet gradient */
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(103, 58, 183, 0.2);
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+/* ---------- FORM GROUP ---------- */
+.form-group {
+  margin-bottom: 25px;
+}
+
+/* ---------- LABELS ---------- */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #bb86fc; /* light violet */
+}
+
+/* ---------- INPUTS & TEXTAREA ---------- */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  transition: border-color 0.3s ease, background 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #bb86fc;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- ERROR MESSAGES ---------- */
+.error-message {
+  font-size: 0.85rem;
+  color: #f87171; /* soft red */
+  margin-top: 6px;
+  display: block;
+}
+
+/* ---------- SUBMIT BUTTON ---------- */
+button {
+  background-color: orange; /* violet */
+  color: #000;
+  font-size: 1rem;
+  padding: 12px 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #a36bf2;
+  transform: translateY(-2px);
+}

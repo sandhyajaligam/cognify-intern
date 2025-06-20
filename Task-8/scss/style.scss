@@ -1,0 +1,29 @@
+$primary-color: orange;
+$text-color: #333;
+$background-color: #f4f4f4;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+.navbar {
+  background-color: $primary-color;
+  padding: 10px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

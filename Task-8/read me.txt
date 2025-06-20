@@ -1,0 +1,16 @@
+ Task-8;
+
+Objective:
+Implemented SCSS using variables, nested styles, and compiled it using Sass CLI.
+
+Steps Followed:
+1. Created a Sass file: scss/style.scss
+2. Wrote SCSS code with variables and nesting
+3. Compiled using: sass scss/style.scss css/style.css
+4. Linked CSS file in index.html
+5. Opened the HTML in browser to verify the styles
+
+How to Run:
+1. Open terminal in project folder
+2. Run the command: sass scss/style.scss css/style.css
+3. Open index.html in a browser
